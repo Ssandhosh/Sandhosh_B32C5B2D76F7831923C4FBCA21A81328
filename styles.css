@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+}
+
+.search-box {
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weather-result {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Add Subtle Emojis */
+.container::before {
+    content: "🌤️";
+    display: block;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+button::after {
+    content: " 🔍";
+}
+
+#weather-result::before {
+    content: "☀️";
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
